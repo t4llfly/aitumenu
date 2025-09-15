@@ -62,7 +62,7 @@ function Salads() {
             <div className="flex flex-row w-[100%] lg:w-[90%] justify-between">
                 <div className="my-auto h-10 w-10 md:h-12 md:w-12"/>
                 <p onClick={() => navigate("/")}
-                   className="cursor-pointer md:text-6xl font-black select-none"
+                   className="cursor-pointer text-4xl md:text-6xl font-black select-none"
                 >
                     САЛАТЫ
                 </p>

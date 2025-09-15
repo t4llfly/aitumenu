@@ -17,7 +17,7 @@ function Complex() {
                     <a><ArrowLeft/></a>
                 </Button>
                 <p onClick={() => navigate("/")}
-                   className="cursor-pointer select-none md:text-6xl text-white font-black"
+                   className="text-4xl cursor-pointer select-none md:text-6xl text-white font-black"
                 >
                     КОМПЛЕКС
                 </p>

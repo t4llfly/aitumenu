@@ -67,7 +67,7 @@ function Second() {
                     <a><ArrowLeft/></a>
                 </Button>
                 <p onClick={() => navigate("/")}
-                   className="select-none cursor-pointer md:text-6xl font-black"
+                   className="text-4xl select-none cursor-pointer md:text-6xl font-black"
                 >
                     ВТОРОЕ
                 </p>

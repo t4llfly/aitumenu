@@ -67,7 +67,7 @@ function Side() {
                     <a><ArrowLeft/></a>
                 </Button>
                 <p onClick={() => navigate("/")}
-                   className="cursor-pointer select-none md:text-6xl font-black"
+                   className="text-4xl cursor-pointer select-none md:text-6xl font-black"
                 >
                     ГАРНИРЫ
                 </p>

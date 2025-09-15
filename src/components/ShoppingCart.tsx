@@ -22,7 +22,7 @@ function ShoppingCart() {
                 {state.items.length === 0 ? (
                     <p className="text-muted-foreground text-center">Корзина пуста</p>
                 ) : (
-                    <>
+                    <div className="flex flex-col h-[80%] overflow-auto">
                         {state.items.map((item, index) => (
                             <div key={index} className="flex justify-between items-center mx-2 mb-2
                             rounded-lg p-4 border-1 border-border"
@@ -40,20 +40,20 @@ function ShoppingCart() {
                                 </Button>
                             </div>
                         ))}
-                        <SheetFooter>
-                            <div className="flex justify-between font-bold text-lg">
-                                <p>Итого:</p>
-                                <p>{totalCost} тг.</p>
-                            </div>
-                            <Button
-                                className="cursor-pointer w-full mt-4"
-                                onClick={() => dispatch({ type: 'CLEAR_CART' })}
-                            >
-                                Очистить корзину
-                            </Button>
-                        </SheetFooter>
-                    </>
+                    </div>
                 )}
+                <SheetFooter>
+                    <div className="flex justify-between font-bold text-lg">
+                        <p>Итого:</p>
+                        <p>{totalCost} тг.</p>
+                    </div>
+                    <Button
+                        className="cursor-pointer w-full mt-4"
+                        onClick={() => dispatch({ type: 'CLEAR_CART' })}
+                    >
+                        Очистить корзину
+                    </Button>
+                </SheetFooter>
             </SheetContent>
         </Sheet>
     );
